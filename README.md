@@ -133,6 +133,28 @@ Para implantar esta função, você precisará:
 6.  **Implantar a função usando o comando `gcloud functions deploy helloGCS` (ou um método equivalente).**
 
 
+## Conceitos Importantes de JavaScript/NodeJs
+
+**Buffers:**
+
+Armazenam dados binários (ex.: imagens).
+Usados para manipular arquivos ou dados em transmissões (como uploads/downloads).
+
+**Streams:**
+
+Processam dados aos poucos, sem carregar tudo na memória.
+Evitam sobrecarga em grandes volumes de dados.
+
+**Chunks:**
+
+Fragmentos de dados em um stream.
+Cada chunk representa parte do conteúdo que pode ser processada.
+
+**Async/Await:**
+
+Lida com operações assíncronas de forma mais legível (ex.: download e chamadas ao modelo).
+
+
 **Observações:**
 
 * Certifique-se que você tem as permissões ideais em sua conta de serviço para cloud run, storage e vertexai.
